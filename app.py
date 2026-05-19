@@ -23,7 +23,6 @@ class Game(db.Model):
         return f'<Game {self.title}>'
 
 
-# CRUD: Read (წაკითხვა)
 @app.route('/')
 def index():
     games_list = Game.query.all()
