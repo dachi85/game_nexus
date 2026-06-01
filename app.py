@@ -4,7 +4,6 @@ from flask_migrate import Migrate
 
 app = Flask(__name__)
 
-
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///game_nexus.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = 'super-secret-key'
@@ -29,7 +28,6 @@ def index():
     return render_template('index.html', games=games_list)
 
 
-
 @app.route('/add', methods=['GET', 'POST'])
 def add_game():
     if request.method == 'POST':
@@ -37,14 +35,37 @@ def add_game():
         platform = request.form.get('platform')
         status = request.form.get('status')
 
-
         new_game = Game(title=title, platform=platform, status=status)
         db.session.add(new_game)
         db.session.commit()
-
         return redirect(url_for('index'))
     return render_template('add_game.html')
 
 
+@app.route('/delete/<int:id>')
+def delete_game(id):
+    game_to_delete = Game.query.get_or_404(id)
+    db.session.delete(game_to_delete)
+    db.session.commit()
+    return redirect(url_for('index'))
+
+
+@app.route('/edit/<int:id>', methods=['GET', 'POST'])
+def edit_game(id):
+    game = Game.query.get_or_404(id)
+
+    if request.method == 'POST':
+        game.title = request.form.get('title')
+        game.platform = request.form.get('platform')
+        game.status = request.form.get('status')
+
+        db.session.commit()
+        return redirect(url_for('index'))
+
+    return render_template('edit_game.html', game=game)
+
+
 if __name__ == '__main__':
+    with app.app_context():
+        db.create_all()
     app.run(debug=True)

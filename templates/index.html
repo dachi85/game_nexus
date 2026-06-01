@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Game Nexus</title>
 </head>
 <body>
-
+    <h1>Game Nexus - My Collection</h1>
+    <ul>
+        {% for game in games %}
+            <li>
+                <strong>{{ game.title }}</strong> ({{ game.platform }}) - <em>{{ game.status }}</em>
+                | <a href="{{ url_for('edit_game', id=game.id) }}">Edit</a>
+                | <a href="{{ url_for('delete_game', id=game.id) }}" onclick="return confirm('Are you sure?')">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="/add">Add New Game</a>
 </body>
 </html>
