@@ -4,6 +4,16 @@
     <title>Game Nexus</title>
 </head>
 <body>
+    <div>
+        <p>Welcome, {{ username }}!</p>
+        {% if username == 'Guest' %}
+            <a href="/login">Login</a>
+        {% else %}
+            <a href="/logout">Logout</a>
+        {% endif %}
+    </div>
+    <hr>
+
     <h1>Game Nexus - My Collection</h1>
     <ul>
         {% for game in games %}

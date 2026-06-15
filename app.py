@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, session
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
@@ -25,7 +25,22 @@ class Game(db.Model):
 @app.route('/')
 def index():
     games_list = Game.query.all()
-    return render_template('index.html', games=games_list)
+    username = session.get('username', 'Guest')
+    return render_template('index.html', games=games_list, username=username)
+
+
+@app.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        session['username'] = request.form.get('username')
+        return redirect(url_for('index'))
+    return render_template('login.html')
+
+
+@app.route('/logout')
+def logout():
+    session.pop('username', None)
+    return redirect(url_for('index'))
 
 
 @app.route('/add', methods=['GET', 'POST'])
