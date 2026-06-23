@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<div class="form-container">
+    <h1>Register</h1>
+    <form method="POST">
+        <label>Username:</label>
+        <input type="text" name="username" placeholder="Choose Username" required>
+
+        <label>Email:</label>
+        <input type="text" name="email" placeholder="Enter Email" required>
+        <small style="color: #aaa; display: block; margin-top: -15px; margin-bottom: 15px;">* Email must contain '@' symbol</small>
+
+        <label>Password:</label>
+        <input type="text" name="password" placeholder="Enter Password" required>
+        <small style="color: #aaa; display: block; margin-top: -15px; margin-bottom: 25px;">* Password must contain at least one digit</small>
+
+        <button type="submit">Register</button>
+    </form>
+    <br>
+    <p>Already have an account? <a href="/login">Login here</a></p>
+</div>
+{% endblock %}

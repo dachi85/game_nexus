@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b29482f-ff0b-4778-ab20-18b83c36bb38" name="Changes" comment="" />
+    <list default="true" id="2b29482f-ff0b-4778-ab20-18b83c36bb38" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/images/celeste.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/cyberpunk.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/eldenring.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/gtav.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/hades.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/hollowknight.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/minecraft.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/portal2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/rdr2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/stardew.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/terraria.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/witcher3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/edit_game.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instance/game_nexus.db" beforeDir="false" afterPath="$PROJECT_DIR$/instance/game_nexus.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add_game.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add_game.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -25,40 +47,49 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="34LL68704FHerXGrBnDJJJOGUF5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.Dachipy.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Dachipy1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Dachipy2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Dachipy3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Dachipy4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.app.executor&quot;: &quot;Run&quot;,
-    &quot;Python.library.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.student_manager.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Dachipy.executor": "Run",
+    "Python.Dachipy1.executor": "Run",
+    "Python.Dachipy2.executor": "Run",
+    "Python.Dachipy3.executor": "Run",
+    "Python.Dachipy4.executor": "Run",
+    "Python.app.executor": "Run",
+    "Python.library.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.student_manager.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/PythonProject/static/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\PythonProject\static\images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProject" />
